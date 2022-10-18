@@ -1,0 +1,59 @@
+local gameid = game.PlaceId
+if(gameid == 7647631063) then
+print("place valid")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Guess The Anime", "Ocean")
+local hotdogs = 1
+
+--MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Teleport")
+MainSection:NewButton("Go To The End(Demon Slayer)", "makes you teleport to the end", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new( 181.031464, 74.9100494, 1850.95605, -0.061091546, -1.52416515e-08, -0.998132169, 2.89274849e-09, 1, -1.54472257e-08, 0.998132169, -3.83104037e-09, -0.061091546)
+end)
+MainSection:NewButton("Go To The End(7000$)", "makes you teleport to the end", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new( 5540.08301, 74.7892914, 606.158508, -0.197261959, 7.60091812e-09, -0.980350792, -2.7732916e-09, 1, 8.31129299e-09, 0.980350792, 4.35830083e-09, -0.197261959)
+end)
+MainSection:NewButton("Go To The End(Chainsaw Man)", "makes you teleport to the end", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new( 182.239822, 75.5610504, 2003.07129, 0.170540422, 1.16535928e-08, -0.985350668, 8.23934272e-08, 1, 2.60871609e-08, 0.985350668, -8.56353353e-08, 0.170540422)
+end)
+MainSection:NewButton("Go To The End(Spy X Family)", "makes you teleport to the end", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new( 182.864136, 75.7780457, 1686.52722, 0.0211439151, 1.00024842e-07, -0.999776423, -3.94072295e-08, 1, 9.92137998e-08, 0.999776423, 3.73006515e-08, 0.0211439151)
+end)
+MainSection:NewButton("Go To The End(My Hero Academia)", "makes you teleport to the end", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new( 179.279312, 73.4380493, 1517.97961, -0.258054525, 1.4208591e-05, 0.966130376, -5.22175355e-07, 1, -1.48461759e-05, -0.966130376, -4.33561263e-06, -0.258054525)
+end)
+MainSection:NewButton("Go To The End(Attack On Titan)", "makes you teleport to the end", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new( 785.598755, 73.4380493, 1238.08728, -0.841361463, -9.07952999e-05, -0.540472806, 4.30643995e-05, 1, -0.000235031286, 0.540472865, -0.000221021401, -0.841361463)
+end)
+MainSection:NewButton("Go To The End(Dragon Ball)", "makes you teleport to the end", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(816.870789, 73.4380264, 829.907959, 0.850100338, -0.00301448163, -0.526612103, 0.00244181324, 0.99999541, -0.00178249157, 0.526615083, 0.000229408295, 0.850103796 )
+end)
+MainSection:NewButton("Go To The End(One Piece)", "makes you teleport to the end", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new( 791.441833, 75.121727, 974.259583, -0.0771365017, -6.60628086e-09, -0.997020543, 4.82496567e-08, 1, -1.03589546e-08, 0.997020543, -4.89049512e-08, -0.0771365017)
+end)
+MainSection:NewButton("Go To The End(Naruto)", "makes you teleport to the end", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new( 766.889526, 73.4327469, 1121.44629, -0.158826783, 8.2038332e-06, 0.987306476, -1.81614666e-07, 1, -8.33852391e-06, -0.987306476, -1.50369033e-06, -0.158826783)
+end)
+MainSection:NewButton("Go To The End(Hunter X Hunter)", "makes you teleport to the end", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new( 171.877411, 73.4321518, 1369.38086, -0.863327324, 0.000118987125, 0.504644334, -3.95317074e-05, 0.99999994, -0.000303413544, -0.504644334, -0.000281894667, -0.863327265)
+end)
+local MainSection = Main:NewSection("Autofarm")
+MainSection:NewToggle("Start/Stop Autofarm(Money)", "(Do Not Enable This While Your Autofarm(Guess)", function(state)
+        if state then
+
+        while hotdogs < 2 do
+        print("Hello")
+        print(hotdogs)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new( 5559.54736, 89.0677414, 606.730225, 0.996925116, 0.0067313076, -0.078070268, -6.5233503e-09, 0.996303558, 0.0859023482, 0.0783599168, -0.0856382102, 0.993240058)
+        Wait(1.5)
+	end
+        else
+        hotdogs = hotdogs + 1
+        print("Toggle Off")
+    end
+end)
+
+else
+print("place invalid")
+end
