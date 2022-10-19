@@ -1,6 +1,3 @@
-local gameid = game.PlaceId
-if(gameid == 7647631063) then
-print("place valid")
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Guess The Anime", "Ocean")
 local hotdogs = 1
