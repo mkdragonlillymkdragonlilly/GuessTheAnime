@@ -50,4 +50,3 @@ MainSection:NewToggle("Start/Stop Autofarm(Money)", "(Do Not Enable This While Y
         print("Toggle Off")
     end
 end)
-end
