@@ -1,5 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Rainbow Friends", "BloodTheme")
+local hotdogs = 1
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("ESP")
 Section:NewButton("Monsters", ".", function()
@@ -223,7 +224,11 @@ while task.wait() do
 end
 end)
 local Section = Tab:NewSection("Fullbright")
-Section:NewButton("Click", ".", function()
+Section:Toggle("Click", ".", function()
+if state then
+while hotdogs < 2 do
+        print("Hello")
+	print(Hotdogs)
     if not _G.FullBrightExecuted then
 
 	_G.FullBrightEnabled = false
@@ -330,6 +335,10 @@ end
 
 _G.FullBrightExecuted = true
 _G.FullBrightEnabled = not _G.FullBrightEnabled
+end)
+else
+        print("Toggle Off")
+    end
 end)
 local Section = Tab:NewSection("Item")
 Section:NewButton("Get Item", ".", function()
