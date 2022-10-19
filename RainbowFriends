@@ -337,6 +337,7 @@ _G.FullBrightExecuted = true
 _G.FullBrightEnabled = not _G.FullBrightEnabled
 end)
 else
+        hotdogs = hotdogs + 1
         print("Toggle Off")
     end
 end)
